@@ -1,0 +1,76 @@
+[
+    {
+        "Name": "Dragonflight",
+        "Seasons": [
+            {
+                "Name": "Season 1",
+                "Id": "DF-S1",
+                "StartDate" : "2023-01-01",
+                "Raids": [
+                    {
+                        "Name":"Vault of the Incarnates"
+
+                    }
+                ]
+            },
+            {
+                "Name": "Season 2",
+                "Id": "DF-S2",
+                "StartDate" : "2023-01-01",
+                "Raids": [
+                    {
+                        "Name":"Aberrus, The Shadow Crucible"
+
+                    }
+                ]
+            },
+            {
+                "Name": "Season 3",
+                "Id": "DF-S3",
+                "StartDate" : "2023-01-01",
+                "Raids": [
+                    {
+                        "Name":"Amirdrassil, The Dream's Home"
+
+                    }
+                ]
+            },
+            {
+                "Name": "Season 4 (Awakened)",
+                "Id": "DF-S4",
+                "StartDate" : "2023-01-01",
+                "Raids": [
+                    {
+                        "Name":"Vault of the Incarnates"
+
+                    },
+                    {
+                        "Name":"Aberrus, The Shadow Crucible"
+
+                    },
+                    {
+                        "Name":"Amirdrassil, The Dream's Home"
+
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "The War Within",
+        "Seasons": [
+            {
+                "Name": "Season 1",
+                "Id": "TWW-S1",
+                "StartDate" : "2024-09-11",
+                "Raids": [
+                    {
+                        "Name":"Nerub-ar Palace"
+
+                    }
+                ]
+            }        
+        ]
+    }
+]
+
