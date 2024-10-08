@@ -1,5 +1,4 @@
 export type BaseRecord = {
-    Id: string;
-    createdAt: string;
+    Id: string; 
 };
   

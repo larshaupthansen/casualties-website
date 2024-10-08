@@ -28,87 +28,52 @@ export const loader = async () => {
 export default function Index() {
 
   const  expansions  = useLoaderData() as ExpansionRecord[];
-  console.log(expansions);
+
+
+ 
   return (
-    <div className=" h-screen items-center justify-center">
-      <div className="flex flex-col items-center gap-16">
-        <header className="flex flex-col items-center gap-9">
-          <h1 className="leading text-2xl font-bold text-gray-800 dark:text-gray-100">
+    <div>
+    <div className="row">
+      <div className="col">
+          <h2 className="leading text-2xl font-bold text-gray-800 dark:text-gray-100">
             Welcome to <span className="sr-only">Casualties</span>
-          </h1>
-          <div className="h-[144px] w-[434px]">
-            CASUALTIES
-          </div>
-        </header>
-        <div className="flex  items-center gap-16 columns-2">
-          <nav className="flex flex-col items-center justify-center  rounded-3xl border border-gray-200 p-6 dark:border-gray-700">
-            <p className="leading-6 text-gray-700 dark:text-gray-200">
-              Loot
-            </p>
-            <ul>
-              {expansions.map((expansion: ExpansionRecord) => (
-                <li key={expansion.Id} >
-                    {expansion.Name}
-                  <ul>
-              {expansion.Seasons?.map((season: SeasonRecord) => (
-                <li key={season.Id} >
-                  <Link to={`/loot/${season.Id}`} className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500">
-                    {season.Name}
-                  </Link>
-                  
-                </li>
-              ))}
-            </ul>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <nav className="flex flex-col items-center justify-center gap-4 rounded-3xl border border-gray-200 p-6 dark:border-gray-700">
-            <p className="leading-6 text-gray-700 dark:text-gray-200">
-              Links
-            </p>
-            <ul>
-              {links.map(({ href, text, icon }) => (
-                <li key={href} >
-                  <Link to={href} className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500">
-                    {icon}
-                    {text}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-        </div>
+          </h2>
+      </div>
+      </div>
+      
+      <div className="row">
+        <h3>Loot</h3>
+            {expansions.map((expansion: ExpansionRecord) => (
+             <div className="col"><div className="card" >             
+             <div className="card-body">
+             <h4>
+                {expansion.Name}
+              </h4>
+              <ul>
+                {expansion.Seasons?.map((season: SeasonRecord) => (
+                  <li key={season.Id} >
+                    <Link to={`/loot/${expansion.Id}/${season.Id}`} className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500">
+                      {season.Name}
+                    </Link>
+                    
+                  </li>
+                ))}
+              </ul>
+             
+             </div>
+           </div> </div>
+            ))}
+            
+        
+    </div>
     </div>
   );
 }
 
 const links = [
   {
-    href: "/loot/DF-S1",
-    text: "Dragonflight S1",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="20"
-        viewBox="0 0 20 20"
-        fill="none"
-        className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300"
-      >
-        <path
-          d="M8.51851 12.0741L7.92592 18L15.6296 9.7037L11.4815 7.33333L12.0741 2L4.37036 10.2963L8.51851 12.0741Z"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
-  },
-  {
     href: "https://remix.run/start/quickstart",
-    text: "Dragonflight S2",
+    text: "Quickstart",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

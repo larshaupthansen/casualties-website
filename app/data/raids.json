@@ -1,11 +1,13 @@
 [
     {
         "Name": "Dragonflight",
+        "Id": "DF",
         "Seasons": [
             {
                 "Name": "Season 1",
                 "Id": "DF-S1",
-                "StartDate" : "2023-01-01",
+                "StartDate" : "2022-12-13",
+                "EndDate" : "2023-05-02",
                 "Raids": [
                     {
                         "Name":"Vault of the Incarnates"
@@ -16,7 +18,8 @@
             {
                 "Name": "Season 2",
                 "Id": "DF-S2",
-                "StartDate" : "2023-01-01",
+                "StartDate" : "2023-05-09",
+                "EndDate" : "2023-09-01",
                 "Raids": [
                     {
                         "Name":"Aberrus, The Shadow Crucible"
@@ -27,7 +30,8 @@
             {
                 "Name": "Season 3",
                 "Id": "DF-S3",
-                "StartDate" : "2023-01-01",
+                "StartDate" : "2023-09-01",
+                "EndDate" : "2024-04-01",
                 "Raids": [
                     {
                         "Name":"Amirdrassil, The Dream's Home"
@@ -38,7 +42,8 @@
             {
                 "Name": "Season 4 (Awakened)",
                 "Id": "DF-S4",
-                "StartDate" : "2023-01-01",
+                "StartDate" : "2024-04-01",
+                "EndDate" : "2024-08-30",
                 "Raids": [
                     {
                         "Name":"Vault of the Incarnates"
@@ -58,11 +63,13 @@
     },
     {
         "Name": "The War Within",
+        "Id": "TWW",
         "Seasons": [
             {
                 "Name": "Season 1",
                 "Id": "TWW-S1",
                 "StartDate" : "2024-09-11",
+                "EndDate" : "2025-12-31",
                 "Raids": [
                     {
                         "Name":"Nerub-ar Palace"

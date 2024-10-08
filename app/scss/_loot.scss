@@ -1,0 +1,85 @@
+
+
+
+ul.loot-dates {
+    
+    list-style-type: none;
+}
+
+li.loot-date {
+
+    
+    display:inline-block;
+   
+    vertical-align: top;
+}
+.loot {
+    border: 1px solid black;
+    padding:0;
+}
+
+.loot .looter {
+    display:inline-block;
+    width:25%;
+    padding:0;
+    font-size: 10pt;
+}
+
+.loot .itemname {
+    display:inline-block;
+    width:75%;
+    font-size: 10pt;
+    white-space: nowrap;
+    padding:0;
+}
+
+
+.hunter {
+    background-color:  var(--class-hunter);
+}
+
+.warrior {
+    background-color: var(--class-warrior)
+}
+
+.monk {
+    background-color: var(--class-warrior);
+}
+
+.deathknight {
+    background-color: var(--class-deathknight);
+    color: white;
+}
+
+.paladin {
+    background-color:var(--class-paladin); 
+}
+
+.priest {
+    background-color: var(--class-priest);
+}
+
+.mage {
+    background-color:  var(--class-mage);
+}
+
+.warlock {
+    background-color: var(--class-warlock);
+}
+
+.shaman {
+    background-color: var(--class-shaman);
+    color:white;
+}
+
+.rogue {
+    background-color:var(--class-rogue);
+}
+
+.evoker {
+    background-color: var(--class-evoker);
+}
+
+.druid {
+    background-color: var(--class-druid);
+}

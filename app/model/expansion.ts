@@ -9,7 +9,9 @@ type ExpansionMutation = {
   type SeasonMutation = {
     Id?: string;
     Name?: string;    
-    Raids?: RaidRecord[]
+    StartDate?: string;
+    EndDate?: string;
+    Raids?: RaidRecord[];
   };
 
   type RaidMutation = {
